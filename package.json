@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/kpranath/nodepractice/issues"
   },
-  "homepage": "https://github.com/kpranath/nodepractice#readme"
+  "homepage": "https://github.com/kpranath/nodepractice#readme",
+  "dependencies": {
+    "mongoose": "^5.9.19",
+    "underscore": "^1.10.2"
+  }
 }
