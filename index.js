@@ -1,5 +1,12 @@
-var _ = require("underscore");
+const express = require("express");
+const app = express()
 
-var result = _.contains([1, 2, 3], 2);
+app.get('/', (req, res) => {
+    res.send("Hello World!");
+})
 
-console.log(result);
+app.get('/api/courses', (req, res) => {
+    res.send([1, 2, 3]);
+})
+
+app.listen(3000, () => console.log("Listening at port 3000..."));

@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/kpranath/nodepractice#readme",
   "dependencies": {
-    "mongoose": "^5.9.19",
-    "underscore": "^1.10.2"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "jshint": "^2.11.1"
