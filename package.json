@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/kpranath/nodepractice#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "joi": "^14.3.1"
   },
   "devDependencies": {
     "jshint": "^2.11.1"
