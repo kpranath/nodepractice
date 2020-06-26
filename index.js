@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.use(logger);
 
-app.use();
+app.use(auth);
 
 courses = [
     { id: 1, name: "course1" },
