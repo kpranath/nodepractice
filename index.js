@@ -1,8 +1,14 @@
 const Joi = require('joi');
+const logger = require('./logger');
+const auth = require('./authenticate');
 const express = require("express");
 const app = express()
 
 app.use(express.json());
+
+app.use(logger);
+
+app.use();
 
 courses = [
     { id: 1, name: "course1" },
