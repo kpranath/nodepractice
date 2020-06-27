@@ -1,3 +1,4 @@
+const Debugger = require('debug')('app:startup');
 const config = require('config');
 const helmet = require('helmet');
 const morgan = require('morgan');
@@ -6,6 +7,9 @@ const logger = require('./logger');
 // const auth = require('./authenticate');
 const express = require("express");
 const app = express()
+
+app.set('view engine', 'pug');
+app.set('views', './views');
 
 // console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
 // console.log(`app: ${app.get('env')}`);
@@ -21,7 +25,7 @@ app.use(helmet());
 
 if (app.get('env') === 'development') {
     app.use(morgan('tiny'));
-    console.log("morgan enabled");
+    Debugger("morgan enabled");
 }
 
 app.use(logger);
@@ -35,7 +39,8 @@ courses = [
 ]
 
 app.get('/', (req, res) => {
-    res.send("Hello World!!!!");
+    // res.send("Hello World!!!!");
+    res.render('index', { title: 'My express app', message: 'Hello' });
 });
 
 app.get('/api/courses', (req, res) => {
