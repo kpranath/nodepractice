@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/kpranath/nodepractice#readme",
   "dependencies": {
+    "config": "^3.3.1",
     "express": "^4.17.1",
-    "joi": "^14.3.1"
+    "helmet": "^3.23.3",
+    "joi": "^14.3.1",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "jshint": "^2.11.1"
